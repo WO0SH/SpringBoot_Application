@@ -3,9 +3,12 @@ package com.immortal.filereverser;
 import ch.qos.logback.core.util.FileUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.util.FileCopyUtils;
 
+
 import java.io.*;
+@EnableJpaRepositories(basePackages = "com.immortal.filereverser.utils")
 
 @SpringBootApplication
 public class FileReverserApplication {
@@ -13,7 +16,7 @@ public class FileReverserApplication {
     public static void main(String[] args) {
         SpringApplication.run(FileReverserApplication.class, args);
 
-
+/*
         // Input Output Files
         String inputFile = "C:\\Users\\a883123\\OneDrive - Atos\\Desktop\\borodino.txt";
         String outputFile = "output.txt";
@@ -62,5 +65,8 @@ public class FileReverserApplication {
         return reversed.toString();
     }
 
+ */
 
+
+    }
 }
