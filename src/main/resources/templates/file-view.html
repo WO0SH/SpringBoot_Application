@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>File View</title>
+</head>
+<body>
+<h2 th:text="${file.filename}"></h2>
+<pre th:text="${file.content}"></pre>
+
+<h2>Reversed Content</h2>
+<form th:action="@{/reverse/{id}(id=${file.id})}" method="get">
+  <input type="submit" value="Reverse Content" />
+</form>
+
+<a th:href="@{/}" th:text="Back to List"></a>
+</body>
+</html>

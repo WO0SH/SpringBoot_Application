@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Reversed File</title>
+</head>
+<body>
+<h2>Reversed Content of <span th:text="${filename}"></span></h2>
+<pre th:text="${content}"></pre>
+
+<a th:href="@{/}" th:text="Back to List"></a>
+</body>
+</html>
